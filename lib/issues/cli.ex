@@ -59,7 +59,7 @@ defmodule Issues.CLI do
 
 
   def decode_response({:error, error}) do
-    {_, message} = List.keyfind(error, "message", 0)
+    {_, message} = List.keyfind(Enum.to_list(error), "message", 0)
     IO.puts "Error fetching from Github: #{message}"
     System.halt(2)
   end
