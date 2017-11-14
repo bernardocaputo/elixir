@@ -37,7 +37,7 @@ defmodule TableFormatterTest do
     end
     assert result ==
     """
-    c1    / c2     / c4     
+    c1    / c2     / c4
     ------+--------+--------
     r1 c1 / r1 c2  / r1+++c4
     r2 c1 / r2 c2  / r2 c4
